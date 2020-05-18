@@ -54,6 +54,9 @@
             "php-cs-fixer fix -v",
             "phpcbf src tests"
         ],
+        "stan": [
+            "phpstan analyse -c phpstan.neon --no-progress"
+        ],
         "serve": "php -dzend_extension=xdebug.so -S 127.0.0.1:8080 -t public",
         "app": "php bin/app.php",
         "page": "php bin/page.php"
